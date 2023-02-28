@@ -1,0 +1,28 @@
+//NAMESPACE NORMAL METHOD
+#include <iostream>
+using namespace std;
+int main()
+{
+    int x;
+    int &ref=x;
+    ref=10;
+    cout<<"x="<<ref<<endl;
+    int y=20;
+    int &ref2=y;
+    cout<<"y="<<ref2<<endl;
+    //int &ref3=10;error cannot be constant
+    const int x1=10;
+    //int &ref3=x1;error cannot use reference varible on constant
+    const int x4=10;
+    const int &ref4=x4;// no error if reference varible also constant
+    int *p=&y;
+    int *&pr=p;//reference pointer
+    cout<<*pr<<endl;
+    int a[3]={1,2,3};
+    int (&aref)[3]=a;
+    int i;
+    for(i=0;i<3;i++)
+    {
+        cout<<aref[i];
+    }
+}
