@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    bool x;
+    cout<<x<<endl;
+    cout<<sizeof(x)<<endl;
+    x=30;
+    cout<<x<<endl;
+    
+    
+  
+    
+}
+
