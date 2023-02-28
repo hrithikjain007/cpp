@@ -1,0 +1,35 @@
+//NAMESPACE directive method METHOD
+#include <iostream>
+using namespace std;
+namespace first
+{
+    int x=10;
+    void fn()
+    {
+        cout<<"first"<<endl;
+    }
+}
+namespace second
+{
+    int x=20;
+    void fn()
+    {
+        cout<<"second"<<endl;
+        
+    }
+}
+//using namespace second;
+//using namespace first;again using it will give error
+int main()
+{
+   //using namespace first;
+   
+    using namespace second;
+    {
+ cout<<x<<endl;
+    }
+    //using namespace first;
+    
+ fn();
+    
+}
