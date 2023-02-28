@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+class a
+{
+    public:
+    inline void fn()
+    {
+        cout<<"inlinefunction"<<endl;
+        
+    }
+};
+
+int main()
+{
+    a obj;
+    obj.fn();
+
+    return 0;
+}
