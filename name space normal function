@@ -1,0 +1,29 @@
+//NAMESPACE NORMAL METHOD
+#include <iostream>
+
+using namespace std;
+namespace first
+{
+    int x=10;
+    void fn()
+    {
+        cout<<"first"<<endl;
+    }
+}
+namespace second
+{
+    int x=20;
+    void fn()
+    {
+        cout<<"second"<<endl;
+    }
+}
+
+int main()
+{
+    cout<<first::x<<endl;
+    first::fn();
+    cout<<second::x<<endl;
+    second::fn();
+    return 0;
+}
