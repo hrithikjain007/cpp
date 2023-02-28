@@ -1,0 +1,29 @@
+//NAMESPACE declaritive METHOD
+#include <iostream>
+
+using namespace std;
+namespace first
+{
+    int x=10;
+    void fn()
+    {
+        cout<<"first"<<endl;
+    }
+}
+namespace second
+{
+    int x=20;
+    void fn()
+    {
+        cout<<"second"<<endl;
+    }
+}
+
+int main()
+{
+    using first::x;
+   using second ::fn;
+     fn();
+    cout<<"x"<<x<<endl;
+    return 0;
+}
