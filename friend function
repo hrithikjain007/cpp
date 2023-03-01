@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+class a{
+    int x;
+    void set()
+    {
+        cout<<"enter data"<<endl;
+        cin>>x;
+    }
+    friend void fn(a);
+    friend int main();
+};
+
+ void fn(a ob)
+{   
+    cout<<"x="<<ob.x<<endl;
+}
+
+int main()
+{
+     a obj;
+     obj.set();
+     fn(obj);
+
+    return 0;
+}
