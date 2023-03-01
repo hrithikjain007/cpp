@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+class MyClass {
+    public:
+        void printAddress() {
+            cout << "Address of this object: " << this << endl;
+        }
+};
+
+int main() {
+    MyClass obj1, obj2;
+    
+    cout << "Address of obj1: " << &obj1 << endl;
+    obj1.printAddress();
+    
+    cout << "Address of obj2: " << &obj2 << endl;
+    obj2.printAddress();
+    
+    return 0;
+}
