@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+class a{
+    int x;
+    void set()
+    {
+        cout<<"enter data"<<endl;
+        cin>>x;
+    }
+    friend void fn(a);
+    friend int main();
+};
+
+ void fn(a ob)
+{   
+    cout<<"x="<<ob.x<<endl;
+}
+
+int main()
+{
+     a obj;
+     obj.set();
+     fn(obj);
+
+    return 0;
+}
+        cout<<"enter data"<<endl;
+        cin>>x;
+    }
+    
+    friend class b;
+};
+class b{
+    public:
+ void fn(a ob)
+ {
+     cout<<"x="<<ob.x<<endl;
+ }
+};
+
+int main()
+{
+    a obj1;
+    b obj2;
+    obj1.set();
+    obj2.fn(obj1);
+
+    return 0;
+}
