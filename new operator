@@ -1,0 +1,17 @@
+int main()
+{
+    char *p;
+    string s="nikhil";
+    p=new char[5]{'n','i','k','h','i'};//---------------------------------------------------------------------------------------------------------------;
+    cout<<p<<endl;
+    cout<<"p="<<*p<<endl;
+    cout<<s<<endl;
+    //printf("");
+     int a;
+     int *q;
+     q=new int(10);//to initilize the allocated memory region
+     cout<<*q<<endl;
+    return 0;
+    
+    
+}
