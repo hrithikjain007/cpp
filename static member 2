@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+class a{
+        static int x;
+    public:
+
+static void    fn ()
+{
+cout<<"helloooo"<<endl;    
+}
+friend int main();
+};
+int a::x=0;
+int main()
+{
+    a ob1,ob2,ob3;
+    a::x=10;
+    cout<<a::x;
+    a::x=20;
+    a::x=30;
+    cout<<a::x;
+    cout<<a::x;
+    cout<<a::x;
+    a::fn();
+}
