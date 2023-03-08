@@ -11,16 +11,16 @@ cout<<"helloooo"<<endl;
 }
 friend int main();
 };
-int a::x=0;
+int a::x=0;//initilize here or it wont work
 int main()
 {
     a ob1,ob2,ob3;
-    a::x=10;
+    a::x=10;//accessing static data member
     cout<<a::x;
     a::x=20;
     a::x=30;
     cout<<a::x;
     cout<<a::x;
     cout<<a::x;
-    a::fn();
+    a::fn();//accessing static member function
 }
