@@ -1,0 +1,27 @@
+//privet constructor function
+#include <iostream>
+
+using namespace std;
+class a{
+    a()
+    {
+        cout<<"privet constructor"<<endl;
+    }
+    friend class b;
+};
+class b{
+    public:
+    b()
+    {
+    a obj;
+    cout<<"constructor"<<endl;
+    }
+    
+};
+
+int main()
+{
+    b obj2;
+
+    return 0;
+}
