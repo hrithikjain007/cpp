@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std;
+class a{
+    public:
+static void    fn ()
+{
+cout<<"helloooo"<<endl;    
+}
+};
+
+int main()
+{
+    
+    a::fn();
+}
